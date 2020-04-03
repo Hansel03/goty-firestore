@@ -37,17 +37,17 @@ export class GraficoBarraHorizontalComponent implements OnInit, OnDestroy {
 
   colorScheme = "nightLights";
 
-  intervalo;
+  // intervalo;
 
   constructor() {
-    this.intervalo = setInterval(() => {
-      const newResults = [...this.result];
-      // tslint:disable-next-line: forin
-      for (const i in newResults) {
-        newResults[i].value = Math.round(Math.random() * 500);
-      }
-      this.result = [...newResults];
-    }, 1500);
+    // this.intervalo = setInterval(() => {
+    //   const newResults = [...this.result];
+    //   // tslint:disable-next-line: forin
+    //   for (const i in newResults) {
+    //     newResults[i].value = Math.round(Math.random() * 500);
+    //   }
+    //   this.result = [...newResults];
+    // }, 1500);
   }
 
   ngOnInit(): void {}
@@ -57,6 +57,6 @@ export class GraficoBarraHorizontalComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    clearInterval(this.intervalo);
+    // clearInterval(this.intervalo);
   }
 }
