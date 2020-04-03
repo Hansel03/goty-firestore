@@ -9,6 +9,8 @@ import { Game } from "../../interfaces/interfaces";
   styleUrls: ["./inicio.component.scss"]
 })
 export class InicioComponent implements OnInit {
+  public juegos: any[] = [];
+
   constructor(private firestore: AngularFirestore) {}
 
   ngOnInit(): void {
@@ -26,8 +28,8 @@ export class InicioComponent implements OnInit {
           });
         })
       )
-      .subscribe(resp => {
-        console.log(resp);
+      .subscribe(juegos => {
+        this.juegos = juegos;
       });
   }
 }
