@@ -23,6 +23,7 @@
     "@swimlane/ngx-charts": "^13.0.2",
     "bootstrap": "^4.4.1",
     "rxjs": "~6.5.4",
+    "sweetalert2": "^9.10.8",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
   },
